@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(img/ernest-brillo-Qi8CvonsYnM-unsplash.jpg); /*Créditos: Foto de Ernest Brillo en Unsplash*/
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/*--- Header ---*/
+
+header {
+    background-color: rgb(87, 64, 100);
+    padding: 1.8rem;
+}
+
+header h1 {
+    font-family: "Lucida Handwriting", cursive;
+    color: rgb(255, 255, 255);
+    font-size: x-larger;
+    text-align: center;
+}
+
+/*--- Navegación ---*/
+.navegation-bar {
+    margin: auto;
+    background-color: rgb(70, 47, 85);
+    text-align: center;
+}
+
+.navegation-bar a {
+    color: rgb(213, 212, 213);
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: medium;
+    display:inline-block
+}
+
+.navegation-bar a:hover {
+    background-color: rgb(112, 91, 128);
+    color: white;
+}
+
+/*--- Contenido principal ---*/
+.title-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content section{
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.main-content p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+/*--- Formulario de contacto ---*/
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"],textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 50%;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-color: #c4b1ca;
+    border-style: double;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(221, 209, 229);
+}
+
+/*--- Listas ---*/
+ul, li{
+    list-style: none;
+    position: relative;
+    margin: 4px 0;
+    transition: 0.5s;
+}
+
+li {
+    padding: 5px;
+    border-left: 2px solid #bdafd2;
+}
+
+ul {
+    font-size: medium;
+}
+
+li:hover {
+    left: 10px;
+    background-color: #e0d5f0;
+}
+
+/*--- Footer ---*/
+
+.footer-content {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 47, 85);
+    text-align: center;
+}
+
+.footer-content a{
+    color: #c4b1ca;
+    margin: 5px;
+}
+
+.footer-content p{
+    color: white;
+    margin-top: 5px;
+}
+
+/*--- Página de inicio ---*/
+#figure-img {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#figure-img:hover img {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*--- Proyectos ---*/
+#coming-soon {
+    color: #939393;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+}
+
+#coming-soon:hover {
+    color: #754285;
+}
