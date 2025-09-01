@@ -2,12 +2,18 @@
     padding: 0;
     margin: 0;
 }
+html {
+    min-height: 100%;
+    position: relative;
+}
 
 body {
     background-image: url(img/ernest-brillo-Qi8CvonsYnM-unsplash.jpg); /*Créditos: Foto de Ernest Brillo en Unsplash*/
+    background-color: #2f3a6e;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -55,12 +61,17 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
 .main-content section{
     border-radius: 10px;
     padding: 30px;
     background-color: #ffffff;
-    max-width: 800px;
-    margin: 30px auto;
+    width: 800px;
+    margin: 30px;
 }
 
 .main-content p {
@@ -133,8 +144,12 @@ li:hover {
 
 /*--- Footer ---*/
 
+footer {
+    align-self: baseline;
+}
+
 .footer-content {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -163,6 +178,32 @@ li:hover {
 #figure-img:hover img {
     -webkit-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+/*--- Responsive ---*/
+@media screen and (max-width: 800px) {
+    .main-content section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .content-wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        transition: .3s ease-in-out;
+    }
+    .content-wrapper p {
+        font-size: 15px;
+    }
+    #figure-img {
+        display: flex;
+        justify-content: center;
+    }
+    #figure-img img{
+        width: 200px;
+    }
 }
 
 /*--- Proyectos ---*/
